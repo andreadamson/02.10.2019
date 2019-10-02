@@ -465,3 +465,49 @@ h1 {
   50%  {opacity: 0.75;color:blue;}
   100% {opacity: 0;color:blue;}
 }
+.footer {
+	width:100%;
+	height:200px;
+	background-color:gray;
+	display: flex;
+	justify-content:space-between;
+
+}
+
+.kast {
+  border-radius: 2px;
+  height: 200px;
+  position: relative;
+  width: 50%;
+  	display: flex;
+	justify-content: center;
+}
+
+.input {
+  position: relative;
+  top: 30%;
+  width: 200px;
+  height:30px;
+}
+
+input::-webkit-input-placeholder {
+  color: #AAA;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: dodgerblue;
+}
+
+.input:focus+.underline {
+  transform: scale(1);
+}
+
+.underline {
+  background-color: dodgerblue;
+  height: 2px;
+  position: absolute;
+  transform: scale(0, 1);
+  transition: all 0.5s linear;
+  width: 202px;
+  top:45%;
+}
