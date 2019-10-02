@@ -7,7 +7,34 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<div class="page">
+<body onload="myFunction()" style="margin:0;">
+
+<div id="loader"></div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+  <h2>Tada!</h2>
+  <p>Some text in my newly loaded page..</p>
+</div>
+<!-- intro-->
+        <div id="intro">
+            <h1 class="anim1">.</h1>
+            <h1 class="anim2">.</h1>
+            <h1 class="anim3">.</h1>
+        </div>  
+
+<script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("intro").style.display = "none";
+  document.getElementById("page").style.display = "block";
+}
+</script>  
+	<div class="page" style="display:none;" id="page">
 		<header>
 			<div class="logo">
 				LOGO
@@ -104,7 +131,7 @@ tempor incididunt ut labore et dolore magna aliqua.</h2>
 			<div class="thumbnail"></div>
 		</section>
 
-
+    	</div>
 	</div>
 </body>
 </html>
